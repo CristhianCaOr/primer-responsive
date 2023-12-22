@@ -1,7 +1,30 @@
+*::selection{
+    background-color: rgb(47, 255, 95);
+    color: black;
+}
+
+
+
 p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
+.titulo{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.titulo::before{
+    content: "¡ ";
+}
+
+.titulo::after{
+    content: " !";
+}
 
 .logo-udea{
     width: 80px;
@@ -15,6 +38,8 @@ p{
     justify-content: space-between;
     margin-bottom: 20px;
     width: 100%;
+    position: sticky;
+    top: 0;
 }
 
 nav{
@@ -51,7 +76,7 @@ box-shadow: 0px 0px 2px rgb(100, 99, 99);
 }
 
 
-.foto-udea{
+.imagenes{
     width: 100%;
     height: auto;
     margin: auto;
@@ -61,23 +86,24 @@ box-shadow: 0px 0px 2px rgb(100, 99, 99);
 .parrafop{
     order: 2;
     text-align: justify;
-    font-size: 20px;
+    font-size: 24px;
+    padding: 20px;
 }
 
 
 
 @media screen and (min-width: 48em){
 
-
-    .foto-udea{
+    .imagenes{
         order: 2;
-        text-align: justify;
-        width: 80%;
+        width: 90%;
     }
     
     .parrafop{
         order: 1;
         font-size: 25px;
+        padding: 0px 45px;
+      
     }
 
 
@@ -86,16 +112,31 @@ box-shadow: 0px 0px 2px rgb(100, 99, 99);
 @media screen and (min-width: 62em){
 
 
-    .foto-udea{
+    .imagenes{
         order: 2;
-        text-align: justify;
-        width: 80%;
+        width: 82%;
     }
     
     .parrafop{
         order: 1;
         font-size: 30px;
+        padding: 0px 95px ;
     }
 
+}
+
+@media screen and (min-width: 75em){
+
+
+    .imagenes{
+        order: 2;
+        width: 90%;
+    }
+    
+    .parrafop{
+        order: 1;
+        font-size: 40px;
+        padding: 0px 70px ;
+    }
 
 }
